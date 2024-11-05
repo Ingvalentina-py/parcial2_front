@@ -1,0 +1,141 @@
+:root {
+  font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-color: #FF5722;
+  --secondary-color: #FF9800;
+  --background-dark: #242424;
+  --background-light: #f4f4f9;
+  --text-dark: rgba(255, 255, 255, 0.87);
+  --text-light: #213547;
+
+  color-scheme: light dark;
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  
+  background-image: url('imagen.png'); /* Cambia a tu imagen */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3em; /* Tamaño reducido */
+  line-height: 1.1;
+  color: var(--primary-color);
+}
+
+/* Botones generales */
+button {
+  border-radius: 6px; /* Reducido */
+  border: 1px solid transparent;
+  padding: 0.4em 1em; /* Reducido */
+  font-size: 0.9em; /* Tamaño reducido */
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Inputs */
+input {
+  border-radius: 6px; /* Reducido */
+  border: 2px solid var(--primary-color);
+  padding: 8px; /* Reducido */
+  font-size: 14px; /* Tamaño reducido */
+  width: 100%;
+  margin-bottom: 15px; /* Espacio reducido */
+  transition: border-color 0.25s;
+}
+
+input:focus {
+  border-color: var(--secondary-color);
+}
+
+/* Estilo específico para el botón de regreso */
+.regresar-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Reducido */
+  cursor: pointer;
+  margin-top: 15px; /* Reducido */
+}
+
+.regresar-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Estilo de la tabla */
+table {
+  width: 100%;
+  margin-top: 15px; /* Espacio superior reducido */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--primary-color);
+  padding: 6px; /* Reducido */
+  text-align: left;
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Estilos para el modo claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+
+  a:hover {
+    color: var(--secondary-color);
+  }
+
+  button {
+    background-color: var(--primary-color);
+  }
+
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+}

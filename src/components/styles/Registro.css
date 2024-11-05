@@ -1,0 +1,127 @@
+:root {
+    font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    --primary-color: #FF5722;
+    --secondary-color: #FF9800;
+    --background-dark: #242424;
+    --background-light: #f4f4f9;
+    --text-dark: rgba(255, 255, 255, 0.87);
+    --text-light: #213547;
+
+    color-scheme: light dark;
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url('imagen.png'); /* Cambia a la imagen que deseas usar */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal para el formulario de registro */
+.registro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; /* Ajustado el padding */
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 90%; /* Usar un porcentaje para permitir la responsividad */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px; /* Esquinas redondeadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para el título */
+.registro-title {
+    font-size: 28px; /* Aumentar tamaño de fuente */
+    color: var(--primary-color); /* Usar variable de color */
+    font-weight: bold;
+    margin-bottom: 15px; /* Ajustar margen */
+}
+
+/* Estilos para grupos de formulario */
+.form-group {
+    width: 100%;
+    margin-bottom: 10px; /* Reducir margen */
+}
+
+/* Estilos para etiquetas */
+.form-group label {
+    font-size: 14px; /* Reducir tamaño de fuente */
+    color: #444;
+}
+
+/* Estilos para inputs */
+input {
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    padding: 8px; /* Reducir padding */
+    font-size: 14px; /* Reducir tamaño de fuente */
+    width: 100%;
+    margin-bottom: 10px; /* Reducir espacio inferior entre inputs */
+    transition: border-color 0.25s;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+}
+
+/* Botones */
+.register-button,
+.back-button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 10px; /* Ajustar padding */
+    font-size: 14px; /* Reducir tamaño de fuente */
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.25s, border-color 0.25s;
+    width: 100%; /* Botones ocupan todo el ancho */
+    margin-top: 10px; /* Reducir margen superior */
+}
+
+.register-button:hover,
+.back-button:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background-color: var(--background-light);
+        color: var(--text-light);
+    }
+
+    a:hover {
+        color: var(--secondary-color);
+    }
+
+    button {
+        background-color: var(--primary-color);
+    }
+
+    button:hover {
+        background-color: var(--secondary-color);
+    }
+}

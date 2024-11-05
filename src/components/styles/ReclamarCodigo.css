@@ -1,0 +1,106 @@
+.reclamar-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    background: #ffffff; /* Fondo blanco para mayor claridad */
+}
+
+.reclamar-title {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 20px; /* Separar del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Color más suave para la etiqueta */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Mayor padding para comodidad */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Transición en el borde */
+}
+
+.form-group input:focus {
+    border-color: #28a745; /* Color de borde al enfocar */
+    outline: none; /* Eliminar el outline por defecto */
+}
+
+.reclamar-button {
+    width: 100%;
+    padding: 12px; /* Mayor padding para el botón */
+    background-color: #28a745; /* Color verde para el botón */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Agregar transformación */
+}
+
+.reclamar-button:disabled {
+    background-color: #6c757d; /* Color gris cuando está deshabilitado */
+}
+
+.reclamar-button:hover:not(:disabled) {
+    background-color: #218838; /* Color más oscuro en hover */
+    transform: scale(1.02); /* Efecto de aumento en hover */
+}
+
+.mensaje-exito {
+    color: #28a745; /* Verde para mensajes de éxito */
+    text-align: center;
+    margin-top: 15px; /* Separar del formulario */
+    font-weight: bold; /* Negrita para destacar */
+}
+
+.mensaje-error {
+    color: #dc3545; /* Rojo para mensajes de error */
+    text-align: center;
+    margin-top: 15px; /* Separar del formulario */
+    font-weight: bold; /* Negrita para destacar */
+}
+
+.loader {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.historial-container {
+    margin-top: 20px; /* Separar del formulario */
+    padding: 10px;
+    border-radius: 8px;
+    background: #f0f0f0; /* Fondo claro para el historial */
+}
+
+.historial-container h3 {
+    text-align: center;
+    color: #333;
+}
+
+.historial-container ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding */
+}
+
+.historial-container li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc; /* Línea entre los ítems */
+    color: #555; /* Color de texto más suave */
+}
+
+.historial-container li:last-child {
+    border-bottom: none; /* Eliminar la línea del último ítem */
+}

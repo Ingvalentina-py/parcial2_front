@@ -1,0 +1,83 @@
+/* Estilos generales para el contenedor del formulario */
+.login-admin-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.login-admin-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para los campos de entrada */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para los botones */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Botón Ingresar */
+button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Botón Añadir Admin */
+button:last-of-type {
+    background-color: #2196F3;
+    color: white;
+    margin-top: 8px;
+}
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008CBA; /* Color diferente para el botón de registro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre los botones */
+}
+
+.register-button:hover {
+    background-color: #007B9E; /* Color al pasar el ratón */
+}

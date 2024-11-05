@@ -1,0 +1,228 @@
+/* Asegúrate de que el contenedor principal ocupe toda la altura */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    margin: auto; /* Centra horizontalmente en caso de que haya espacio extra */
+  }
+  
+  /* Resto de estilos para el formulario, títulos, y botones */
+  .login-title {
+    font-size: 26px;
+    color: #ff9900; /* Color vibrante */
+    font-weight: bold;
+  }
+  
+  .login-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los grupos de formulario */
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group .icon {
+    margin-right: 8px;
+    color: #ff9900; /* Color vibrante */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff9900;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #ff3300; /* Cambia el color al hacer foco */
+  }
+  
+  /* Botones */
+  .login-button,
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button {
+    background-color: #ff3300;
+    color: white;
+  }
+  
+  .register-button {
+    background-color: #ff9900;
+    color: white;
+  }
+  
+  .login-button:hover {
+    background-color: #e62e00;
+  }
+  
+  .register-button:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Estilos generales para el formulario */
+.login-title {
+    font-size: 26px;
+    color: #ff9900; /* Color vibrante */
+    font-weight: bold;
+  }
+  
+  .login-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los grupos de formulario */
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group .icon {
+    margin-right: 8px;
+    color: #ff9900; /* Color vibrante */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff9900;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #ff3300; /* Cambia el color al hacer foco */
+  }
+  
+  /* Botones */
+  .login-button,
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button {
+    background-color: #ff3300;
+    color: white;
+  }
+  
+  .register-button {
+    background-color: #ff9900;
+    color: white;
+  }
+  
+  .login-button:hover {
+    background-color: #e62e00;
+  }
+  
+  .register-button:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .login-title {
+      font-size: 24px; /* Ajusta el tamaño de fuente del título */
+    }
+  
+    .form-group input {
+      padding: 10px; /* Reduce el padding en los inputs */
+    }
+  
+    .login-button,
+    .register-button {
+      padding: 10px; /* Ajusta el padding de los botones */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-title {
+      font-size: 20px; /* Ajusta aún más el tamaño del título */
+    }
+  
+    .login-subtitle {
+      font-size: 14px; /* Ajusta el tamaño del subtítulo */
+    }
+  
+    .form-group input {
+      padding: 8px; /* Reduce más el padding en inputs */
+    }
+  
+    .login-button,
+    .register-button {
+      padding: 8px; /* Reduce más el padding de los botones */
+    }
+  }
+  /* Asegúrate de que el contenedor principal ocupe toda la altura */
+html, body {
+    height: 100%; /* Asegúrate de que el html y body ocupen toda la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+    padding: 30px;
+    max-width: 400px;
+    width: 90%; /* Cambia a un porcentaje para mayor responsividad */
+    height: auto; /* Permite que la altura sea dinámica */
+    min-height: 400px; /* Asegura un tamaño mínimo en pantallas más pequeñas */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    margin: auto; /* Centra horizontalmente en caso de que haya espacio extra */
+  }
+  
