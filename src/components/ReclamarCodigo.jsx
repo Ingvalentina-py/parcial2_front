@@ -21,7 +21,7 @@ const ReclamarCodigo = ({ userId }) => {
         setCargando(true); // Mostrar indicador de carga
 
         try {
-            const response = await fetch('https://back-margarita.vercel.app/v1/margarita/reclamar', {
+            const response = await fetch('https://parcial2-back-kappa.vercel.app/v1/margarita/reclamar', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

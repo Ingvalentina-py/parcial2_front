@@ -10,7 +10,7 @@ const Ganadores = () => {
 
     const obtenerGanadores = async () => {
         try {
-            const response = await fetch('https://back-margarita.vercel.app/v1/margarita/ganadores', {
+            const response = await fetch('https://parcial2-back-kappa.vercel.app/v1/margarita/ganadores', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ const LoginAdmin = ({ callback }) => { // Añadir callback aquí
         const datos = { username, password };
 
         try {
-            const response = await fetch('https://back-margarita.vercel.app/v1/margarita/loginadmin', {
+            const response = await fetch('https://parcial2-back-kappa.vercel.app/v1/margarita/loginadmin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
