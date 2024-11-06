@@ -14,7 +14,7 @@ const NewAdmin = () => {
         const datos = { username, password };
 
         try {
-            const response = await fetch('https://back-margarita.vercel.app/v1/margarita/registeradmin', {
+            const response = await fetch('https://parcial2-back-kappa.vercel.app//v1/margarita/registeradmin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
